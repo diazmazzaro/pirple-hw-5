@@ -66,9 +66,9 @@ helper.testURl = function(strUrl, method, callback){
           var status =  res.statusCode;
           // Callback successfully if the request went through
           if(status == 200 || status == 201){
-            callback(undefined, true);
+            callback(false, true);
           } else {
-            callback(undefined, false);
+            callback(false, false);
           }
       });
 

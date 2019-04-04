@@ -41,6 +41,22 @@ unit['helpers.createNotTooGoodRandomString should return random'] = function(don
   done();
 };
 
+// Logs.list should callback an array and a false error
+unit['helpers.testURl should callback a false error and true check for google.com'] = function(done){
+  helpers.testURl('https://www.google.com',function(err,check){
+      assert.equal(err, false);
+      assert.ok(check);
+      done();
+  });
+};
+
+// Logs.list should callback an array and a false error
+unit['helpers.testURl should callback an error for invalid.url.com'] = function(done){
+  helpers.testURl('invalid.url.com',function(err,check){
+      assert.ok(err);
+      done();
+  });
+};
 
 // // Logs.list should callback an array and a false error
 // unit['logs.list should callback a false error and an array of log names'] = function(done){
