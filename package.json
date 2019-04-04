@@ -1,0 +1,25 @@
+{
+  "name": "pirple-hw-5",
+  "version": "1.0.0",
+  "description": "Test runer example",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diazmazzaro/pirple-hw-5.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "pdm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diazmazzaro/pirple-hw-5/issues"
+  },
+  "homepage": "https://github.com/diazmazzaro/pirple-hw-5#readme"
+}
